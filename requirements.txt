@@ -1,0 +1,12 @@
+matplotlib
+numpy
+scipy
+sklearn
+tensorflow
+keras
+networkx
+pillow
+scikit-image
+opencv-contrib-python
+pandas
+nltk

@@ -26,6 +26,35 @@ Organisée comme telle :
 ## Détails
 Ces notebooks sont accessibles directement depuis Github. Ils ont toutefois été pensés pour être lus par le module RISE (permettant de coupler jupyter et reveal.js) afin d'avoir une présentation live.
 
+## Voir l'introduction
+Il existe plusieurs possibilités pour voir cette introduction :
+- avec play with docker (recommandée) :  
+    Arrive prochainement
+
+- avec github :  
+    commencer directement sur `https://github.com/Tofull/introduction_python/blob/master/00_Python.ipynb` (attention, la présentation RISE n'est pas disponible avec ce mode)
+
+- en local avec docker :  
+    ```sh
+    git clone https://github.com/Tofull/introduction_python
+    cd introduction_python
+    docker build -t introduction_python .
+    docker run -it -p 8888:8888 --rm introduction_python
+    ```
+    et aller sur `http://localhost:8888/notebooks/00_Python.ipynb`
+
+- en local (non recommandé) :  
+    ```sh
+    git clone https://github.com/Tofull/introduction_python
+    cd introduction_python
+    pip install jupyter
+    pip install RISE
+    pip install -r requirements.txt
+    jupyter notebook --ip=0.0.0.0
+    ```
+    et aller sur `http://localhost:8888/notebooks/00_Python.ipynb`
+
+
 ## Motivation
 Cette introduction a été écrite pour répondre aux besoins des économistes de JLR, une société qui évalue le prix des biens immobiliers sur toute l'Amérique du nord. Un seul des économistes connaissait python. Il souhaitait faire monter en compétence l'ensemble de son équipe pour travailler en commun et m'a demandé de rédiger cette introduction. C'est finalement bien plus que l'équipe des économistes qui a bénéficié de cette introduction.
 
