@@ -30,6 +30,7 @@ Ces notebooks sont accessibles directement depuis Github. Ils ont toutefois ét�
 Il existe plusieurs possibilités pour voir cette introduction :
 - avec play with docker (recommandée) :  
     [![Try in PWD](https://cdn.rawgit.com/play-with-docker/stacks/cff22438/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/tofull/introduction_python/master/docker_stack.yml&stack_name=notebooks)
+    ![Tutorial gif](assets/play_with_docker.gif)
 
 - avec github :  
     commencer directement sur `https://github.com/Tofull/introduction_python/blob/master/00_Python.ipynb` (attention, la présentation RISE n'est pas disponible avec ce mode)
