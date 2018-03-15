@@ -36,10 +36,7 @@ Il existe plusieurs possibilités pour voir cette introduction :
 
 - en local avec docker :  
     ```sh
-    git clone https://github.com/Tofull/introduction_python
-    cd introduction_python
-    docker build -t introduction_python .
-    docker run -it -p 8888:8888 --rm introduction_python
+    docker run -it -p 8888:8888 --rm tofull/introduction_python
     ```
     et aller sur `http://localhost:8888/notebooks/00_Python.ipynb`
 
@@ -49,6 +46,8 @@ Il existe plusieurs possibilités pour voir cette introduction :
     cd introduction_python
     pip install jupyter
     pip install RISE
+    jupyter-nbextension install rise --py --sys-prefix
+    jupyter-nbextension enable rise --py --sys-prefix
     pip install -r requirements.txt
     jupyter notebook --ip=0.0.0.0
     ```
