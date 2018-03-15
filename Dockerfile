@@ -14,4 +14,4 @@ RUN jupyter-nbextension enable rise --py --sys-prefix
 
 RUN pip install -r /notebooks/requirements.txt
 
-ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--notebook-dir=/notebooks/"]
+ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--notebook-dir=/notebooks/", "--NotebookApp.token=''"]
